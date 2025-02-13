@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>localStorage practice: To-Do's</title>
+    <script src="storage.js" defer></script>
+    <style>
+        body {
+            display: grid;
+            row-gap: 1.5rem;
+            grid-template-rows: 1fr 5fr 1fr;
+        }
+
+        header {
+            grid-row: 1/2;
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr;
+        }
+        header h1 {
+            grid-column: 1/2;
+        }
+        header div {
+            grid-column: 3/4;
+            display: flex;
+            flex-direction: column;
+            width: 150px;
+            justify-content:flex-end;
+            /* align-items: center; */
+            margin: 0 auto
+        }
+        .todos {
+            grid-row: 2/3;
+            width: 300px;
+        }
+        .todos > li {
+            display: grid;
+
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid;
+            padding: 0.5em;
+        }
+        .todos p {
+            margin: 0;
+        }
+        .todos span {
+            cursor: pointer;
+        }
+        .strike {
+            text-decoration: line-through;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ToDos</h1>
+        <div id="username">
+            <label for="user">Username</label>
+            <input name="user" id="user"/>
+            <button id="submitName">Set Name</button>
+        </div>
+        <div id="userDisplay"></div>
+    </header>
+    <main>
+        <section>
+            <label for="todo">Enter Task</label>
+            <input name="todo" id="todo"/>
+            <button id="submitTask">Enter</button>
+        </section>
+        <ul id="todoList" class="todos"></ul>
+    </main>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+    "portfolio": {
+        "image": "portfolio.jpg",
+        "title": "My Portfolio",
+        "description": "Come see my portfolio"
+    },
+    "family": {
+        "image": "family.jpg",
+        "title": "My Family",
+        "description": "Come meet my family"
+    },
+    "hobbies": {
+        "image": "hobbies.jpg",
+        "title": "My Hobbies",
+        "description":"Come explore my hobbies!"
+    }
+}

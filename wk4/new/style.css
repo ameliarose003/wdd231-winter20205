@@ -1,0 +1,50 @@
+body {
+    background-color: beige;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    font-size: larger;
+    font-weight: bold;
+}
+
+header {
+    background-color: rgb(166, 215, 251);
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: 50px 300px 50px;
+}
+
+header h1 {
+    grid-row: 1/2;
+}
+
+#logo {
+    width: 20px;
+    height: 20px;
+    grid-row: 1/2;
+    justify-self: left;
+}
+
+#search {
+    width: 20px;
+    height: 20px;
+    grid-row: 1/2;
+    justify-self: right;
+}
+
+#headerImg {
+    grid-row: 2/3;
+    width: 100%;
+}
+
+menu {
+    grid-row: 3/4;
+}
+
+ul li {
+    display: grid;
+
+}
+
