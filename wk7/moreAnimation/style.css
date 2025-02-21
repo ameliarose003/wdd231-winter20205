@@ -1,5 +1,5 @@
 .circle {
-    animation: bounce 4s infinite alternate;
+    animation: bounce 2s infinite alternate;
 }
 
 @keyframes bounce {
@@ -9,4 +9,21 @@
     50% {
         transform: translateY(-20px);
     }
+}
+
+body {
+    height: 100vh;
+}
+
+.btn-container {
+    display: flex;
+    justify-self: center;
+    align-content: stretch;
+    margin-top: 30vh;
+}
+
+.resetbtn {
+    /* width: 100px; */
+    padding: 100px;
+    background-color: aliceblue;
 }

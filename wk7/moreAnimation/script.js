@@ -25,4 +25,30 @@ function randomColor() {
     return `rgb(${r}, ${g}, ${b})`
 }
 
-createCircles(100);
+function getNumber() {
+    const input = document.querySelector('.number');
+    const number = parseInt(input.value, 10);
+    createCircles(number);
+    console.log(number)
+}
+
+function renderCircles() {
+    const button = document.querySelector('.btn');
+    button.addEventListener('click', () => {
+        getNumber();
+    })
+}
+console.log(renderCircles());
+console.log(getNumber());
+
+function resetCircles() {
+    const reset = document.querySelector('.reset-btn');
+    reset.addEventListener('click', () => {
+        container.innerHTML = '';
+    })
+}
+
+// createCircles(600);
+// getNumber();
+renderCircles();
+resetCircles();
