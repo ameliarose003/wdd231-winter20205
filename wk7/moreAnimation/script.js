@@ -14,8 +14,16 @@ function createCircles(number) {
         circle.style.borderRadius = "50%";
         circle.style.display = "inline-block";
         circle.style.animationDelay = `${i * 0.2}s`;
+
+        circle.addEventListener('click', () => {
+            // circle.style.animationPlayState = "paused";
+            circle.style.backgroundColor = randomColor();
+        });
+
         container.appendChild(circle);
     }
+
+    
 }
 
 function randomColor() {
@@ -33,13 +41,12 @@ function getNumber() {
 }
 
 function renderCircles() {
-    const button = document.querySelector('.btn');
-    button.addEventListener('click', () => {
+    const numberForm = document.querySelector('.numberForm');
+    numberForm.addEventListener('submit', function (event) {
+        event.preventDefault();
         getNumber();
     })
 }
-console.log(renderCircles());
-console.log(getNumber());
 
 function resetCircles() {
     const reset = document.querySelector('.reset-btn');
@@ -48,7 +55,16 @@ function resetCircles() {
     })
 }
 
+// function changeCircle() {
+//     const circle = document.querySelector('.circle');
+//     circle.addEventListener('click', () => {
+//         circle.style.animationPlayState = "paused";
+//         circle.style.backgroundColor = randomColor();
+//     })
+// }
+
 // createCircles(600);
 // getNumber();
 renderCircles();
 resetCircles();
+// changeCircle();

@@ -1,13 +1,23 @@
 .circle {
     animation: bounce 2s infinite alternate;
+    /* transform: scale(1); */
+    /* transition: transform 0.3s ease; */
+    /* will-change: transform; */
+}
+
+/* I can't figure out how to make the circle get bigger when it is hovered over */
+
+.circle:hover {
+    /* transform: scale(1.5); */
+    animation-play-state: paused;
 }
 
 @keyframes bounce {
     0%, 100% {
-        transform: translateY(60px);
+        transform: translateY(60px) scale(1);
     }
     50% {
-        transform: translateY(-20px);
+        transform: translateY(-20px) scale(1);
     }
 }
 
