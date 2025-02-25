@@ -1,3 +1,24 @@
+
+function onClick() {
+    const menuBtn = document.querySelector('.menu');
+    const dropdownContent = document.querySelector('.dropdownContent');
+
+    menuBtn.addEventListener("click", (e) => {
+        const isVisible = dropdownContent.classList.toggle("visible");
+        menuBtn.setAttribute("aria-expanded", isVisible);
+        e.stopPropagation();
+    })
+
+    document.addEventListener("click", (event) => {
+        if (menuBtn.contains(event.target) && !dropdownContent.contains(event.target)) {
+            const isVisible = dropdownContent.classList.toggle("visible");
+            menuBtn.setAttribute("aria-expanded", isVisible);
+        }});
+}
+
+
+
+
 const container = document.querySelector('.container');
 container.style.display = "flex";
 container.style.flexWrap = "wrap";
@@ -67,4 +88,5 @@ function resetCircles() {
 // getNumber();
 renderCircles();
 resetCircles();
+onClick();
 // changeCircle();
