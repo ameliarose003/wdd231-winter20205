@@ -1,5 +1,5 @@
 
-function onClick() {
+function menuOnClick() {
     const menuBtn = document.querySelector('.menu');
     const dropdownContent = document.querySelector('.dropdownContent');
 
@@ -15,6 +15,14 @@ function onClick() {
             menuBtn.setAttribute("aria-expanded", isVisible);
         }});
 }
+
+const pink = document.querySelector(".color1");
+pink.addEventListener("click", () => {
+    const changeCircleColor = "rgb(255, 192, 203)"
+})
+const blue = document.querySelector(".color2");
+const green = document.querySelector(".color3");
+const random = document.querySelector(".color4");
 
 
 
@@ -88,5 +96,5 @@ function resetCircles() {
 // getNumber();
 renderCircles();
 resetCircles();
-onClick();
+menuOnClick();
 // changeCircle();

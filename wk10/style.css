@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Shippori+Mincho&display=swap');
+body {
+    font-family: "Shippori Mincho", serif;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    background-color: rgb(255, 242, 248);
+    max-width: 1600px;
+    color: #2b2a2a;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    /* justify-content: center; */
+    /* flex-direction: column; */
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+header {
+    grid-column: 1/span 2;
+    border-bottom: 1px solid rgb(173, 172, 172);
+    color: rgb(28, 44, 34);
+    font-size: 20px;
+
+    height: 100px;
+}
+
+h1 {
+    text-align: center;
+   
+}
+
+main {
+    grid-column: 1/3;
+
+}
+
+.welcome {
+    border-bottom: 1px solid rgb(173, 172, 172);
+}
+
+.intro {
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+    gap: 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgb(173, 172, 172);
+
+}
+
+
+.fritter {
+    display: flex;
+    flex-direction: column;
+    /* font-family: "Italiana", sans-serif; */
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    /* font-weight:600; */
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.fritter h2 {
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgb(210, 208, 208);
+}
+
+.fritter p {
+    font-size: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+
+}
+
+.intro a {
+    text-decoration: 0;
+
+}
+
+img {
+    width: 300px;
+    height: auto;
+    box-shadow: 3px 3px 3px 3px rgb(173, 172, 172,0.4);
+    border-radius: 20%;
+    cursor: pointer;
+}
+
+.products {
+    
+}
+
+form {
+    /* background-color: white; */
+}
+
+.appleProducts {
+
+}
+
+ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    font-family: "Italiana", sans-serif;
+    font-weight: 600;
+    width: 200px;
+    align-items: center;
+    justify-self: center;
+    text-align: center;
+    background-color: pink;
+    margin: 3px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    box-shadow: 1px 1px 1px 1px rgba(190, 174, 174, 0.2);
+    cursor: pointer;
+    transition: background-color ease 0.3s;
+    transition: transform ease 0.1s;
+    transform: scale(1);
+    padding: 3px;
+    padding-bottom: 5px;
+}
+
+li:hover {
+    background-color: rgb(234, 159, 172);
+    transform: scale(1.1);
+    box-shadow: 2px 2px 2px 2px rgba(172, 154, 154, 0.2);
+
+}
+
+form {
+    margin-top: 20px;
+}
+
+footer {
+    margin: 30px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
